@@ -23,7 +23,7 @@ module Hamlize
       ::Guard.start(:watchdir => @options[:source], :guardfile_contents => %{
         require "hamlize/guard"
 
-        guard "hamlize", :source => "#{@options[:source]}", :dest => "#{@options[:output]}" do
+        guard "hamlize", :source => "#{@options[:source]}", :output => "#{@options[:output]}" do
           watch %r(^.+\.haml$)
         end
       })
