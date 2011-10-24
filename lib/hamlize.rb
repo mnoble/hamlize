@@ -1,4 +1,5 @@
 require "haml"
+require "optparse"
 require "hamlize/version"
 require "hamlize/cli"
 require "hamlize/converter"
